@@ -11,7 +11,11 @@
   
   Para ejecutar y utilizar el programa: ```java -cp target/classes com.arep.App```
 
-  Para ejecutar las pruebas: ``` mvn test```
+  Para ejecutar las pruebas: ```mvn test```
+  
+  Para generar javadoc con maven: ```mvn javadoc:javadoc```
+  
+  Para generar javadoc de las pruebas: ```mvn javadoc:test-javadoc```
   
   **NOTA:** Para poder utilizar el programa es necesario haber compilado primero el proyecto con **mvn package**.
  
