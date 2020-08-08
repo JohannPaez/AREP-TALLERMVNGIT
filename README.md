@@ -54,26 +54,25 @@ Para poder ejecutar sus pruebas siga los siguientes pasos:
 
 ## Ejemplo de prueba de desviación estándar
 ```
-
-  public static final double MAXERROR = 0.00000000000001;
+	public static final double MAXERROR = 0.00000000000001;
 	ListaEncadenada lista = new ListaEncadenada();
 	double[] caso1 = {160, 591, 114, 229, 230, 270, 128, 1657, 624, 1503};
   
-  /**
+  	/**
 	 * Llena la lista encadenada con los valores dados en una lista de numeros decimales. 
 	 * @param listaDoubles Es la lista de valores que queremos que tenga nuestra lista encadenada.
 	 */
-    public void llenarLista(double[] listaDoubles) {
-    	lista = new ListaEncadenada();
-    	for (int i = 0; i < listaDoubles.length; i++) {
-    		double value = listaDoubles[i];
-    		lista.addRight(new Node(value));
-    	}
-    }
-    
+	public void llenarLista(double[] listaDoubles) {
+		lista = new ListaEncadenada();
+		for (int i = 0; i < listaDoubles.length; i++) {
+			double value = listaDoubles[i];
+			lista.addRight(new Node(value));
+		}
+	}
+
 	/**
-     * Prueba que la desviación estándar calculada por la aplicación es 572.03 con los valores del caso 1.
-     */
+	* Prueba que la desviación estándar calculada por la aplicación es 572.03 con los valores del caso 1.
+	*/
 	@Test
 	public void shouldCalculateStandardDeviationCorrectlyCase1() {
 		double resultadoEsperado = 572.03;
@@ -81,7 +80,6 @@ Para poder ejecutar sus pruebas siga los siguientes pasos:
 		Calculator c = new Calculator(lista);
 		assertEquals(c.getDesviacionEstandar(), resultadoEsperado, MAXERROR);
 	}
-
 ```
 
 ## Ejemplos de uso
