@@ -35,5 +35,6 @@ public class App
     	Calculator c = new Calculator(lista);
     	System.out.println("La media es: " + c.getMedia());
     	System.out.println("La desviacion estandar es: " + c.getDesviacionEstandar());
+
     }
 }
