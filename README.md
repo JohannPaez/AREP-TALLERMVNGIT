@@ -2,7 +2,8 @@
  
  Este aplicativo calcula algunas medidas estadísticas de n números reales que se leen de un archivo, utilizando una lista encadenada básica propia creada en la aplicación.
  
- 
+ ## Diseño
+ Los detalles del diseño, la arquitectura del programa, problema, definiciones y pruebas se pueden encontrar en el siguiente documento [Artículo Sobre el Diseño](Articulo_EjercicioMVNGit.pdf).
  ## Prerequisitos
  
  Conocimientos básicos sobre estadística, media, mediana y desviación estándar.
