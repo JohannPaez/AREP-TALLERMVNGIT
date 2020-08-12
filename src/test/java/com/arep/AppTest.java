@@ -29,6 +29,74 @@ public class AppTest {
 	double[] caso10 = {11, 22, 33, 44, 55, 66, 77, 88, 99, 101};
 		
     
+	
+	
+	/**
+	 * Lee el archivo de prueba de números 1 (10 números), calcula la media y desviación estándar y compara son iguales al valor esperado.
+	 */
+	@Test
+	public void shouldBeReadFileAndCompreListOne() {
+		double resultadoEsperadoMedia = 550.6;
+		double resultadoEsperadoDesviacion = 572.03;
+		ListaEncadenada listFileOne = App.leerArchivo("Pruebas/Lista_Numeros_1.txt");
+		Calculator c = new Calculator(listFileOne);
+		assertEquals(c.getMedia(), resultadoEsperadoMedia, MAXERROR);
+		assertEquals(c.getDesviacionEstandar(), resultadoEsperadoDesviacion, MAXERROR);
+	}
+	
+	/**
+	 * Lee el archivo de prueba de números 2 (10 números), calcula la media y desviación estándar y compara son iguales al valor esperado.
+	 */
+	@Test
+	public void shouldBeReadFileAndCompreListTwo() {
+		double resultadoEsperadoMedia = 60.32;
+		double resultadoEsperadoDesviacion = 62.26;
+		ListaEncadenada listFileTwo = App.leerArchivo("Pruebas/Lista_Numeros_2.txt");
+		Calculator c = new Calculator(listFileTwo);
+		assertEquals(c.getMedia(), resultadoEsperadoMedia, MAXERROR);
+		assertEquals(c.getDesviacionEstandar(), resultadoEsperadoDesviacion, MAXERROR);
+	}
+	
+	/**
+	 * Lee el archivo de prueba de números 3 (50 números), calcula la media y desviación estándar y compara son iguales al valor esperado.
+	 */
+	@Test
+	public void shouldBeReadFileAndCompreListThree() {
+		double resultadoEsperadoMedia = 52.41;
+		double resultadoEsperadoDesviacion = 27.97;
+		ListaEncadenada listFileThree = App.leerArchivo("Pruebas/Lista_Numeros_3.txt");
+		Calculator c = new Calculator(listFileThree);
+		assertEquals(c.getMedia(), resultadoEsperadoMedia, MAXERROR);
+		assertEquals(c.getDesviacionEstandar(), resultadoEsperadoDesviacion, MAXERROR);
+	}
+	
+	/**
+	 * Lee el archivo de prueba de números 4 (100 números), calcula la media y desviación estándar y compara son iguales al valor esperado.
+	 */
+	@Test
+	public void shouldBeReadFileAndCompreListFour() {
+		double resultadoEsperadoMedia = 292.60;
+		double resultadoEsperadoDesviacion = 113.35;
+		ListaEncadenada listFileFour = App.leerArchivo("Pruebas/Lista_Numeros_4.txt");
+		Calculator c = new Calculator(listFileFour);
+		assertEquals(c.getMedia(), resultadoEsperadoMedia, MAXERROR);
+		assertEquals(c.getDesviacionEstandar(), resultadoEsperadoDesviacion, MAXERROR);
+	}
+	
+	/**
+	 * Lee el archivo de prueba de números 5 (500 números), calcula la media y desviación estándar y compara son iguales al valor esperado.
+	 */
+	@Test
+	public void shouldBeReadFileAndCompreListFive() {
+		double resultadoEsperadoMedia = 511.15;
+		double resultadoEsperadoDesviacion = 285.92;
+		ListaEncadenada listFileFive = App.leerArchivo("Pruebas/Lista_Numeros_5.txt");
+		Calculator c = new Calculator(listFileFive);
+		assertEquals(c.getMedia(), resultadoEsperadoMedia, MAXERROR);
+		assertEquals(c.getDesviacionEstandar(), resultadoEsperadoDesviacion, MAXERROR);
+	}
+	
+	
 	/**
 	 * Llena la lista encadenada con los valores dados en una lista de numeros decimales. 
 	 * @param listaDoubles Es la lista de valores que queremos que tenga nuestra lista encadenada.
