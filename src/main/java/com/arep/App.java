@@ -22,7 +22,7 @@ public class App {
 	
 	/**
 	 * Lee un archivo de números (Este se debe pasar como parametro al momento de ejecutar) y lo guarda en una lista encadenada.
-	 * @param args Son los parametros al momento de ejecutar.
+	 * @param filePath Es la dirección donde se encuentra el archivo de números a leer.
 	 * @return La lista en cadenada creada a partir de los datos del archivo.
 	 */
 	public static ListaEncadenada leerArchivo(String filePath) {		
