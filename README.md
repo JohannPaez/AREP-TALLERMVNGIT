@@ -9,7 +9,7 @@
  ## Comandos 
   Para compilar y correr las pruebas: ```mvn package```
   
-  Para ejecutar y utilizar el programa: ```java -cp target/classes com.arep.App```
+  Para ejecutar y utilizar el programa: ```java -cp target/classes com.arep.App <lista_numeros.txt>```
 
   Para ejecutar las pruebas: ```mvn test```
   
@@ -17,7 +17,7 @@
   
   Para generar javadoc de las pruebas: ```mvn javadoc:test-javadoc```
   
-  **NOTA:** Para poder utilizar el programa es necesario haber compilado primero el proyecto con **mvn package**.
+  **IMPORTANTE:** Para poder utilizar el aplicativo es necesario compilar primero el proyecto con **mvn package**.
  
  ## Operaciones
  - Media: Calcula la media de una lista de n números ingresados por consola.
@@ -82,14 +82,20 @@ public void shouldCalculateStandardDeviationCorrectlyCase1() {
 }
 ```
 
-## Ejemplos de uso
-Habrá el proyecto en el editor de su preferencia:
-1. Busque el directorio src\main\java\com\arep\.
-2. Habrá la clase App que es la clase principal.
-3. Ejecutela desde Eclipse o el programa de su preferencia.
-4. Digite la lista de números con la que le gustaría realizar las operaciones.
-6. Cuando termine digite dos enter.
-7. El resultado se muestra en pantalla, comparelo con el esperado.
+## ¿Cómo usar el aplicativo?
+1. Copie el enlace proporciano por el git del proyecto y clone el repositorio en el directorio de su preferencia.
+
+	- git clone https://github.com/JohannPaez/AREP-TALLERMVNGIT.git
+2. Entre a la carpeta **AREP-TALLERMVNGIT**.
+3. Compile el proyecto antes de comenzar a utilizar sus funcionalidades.
+
+	- **NOTA:** Recuerde que el proyecto se compila con el comando **mvn package**.
+4. Cree un archivo en ese directorio con la lista de números a la cuál le desea calcular la media y la desviación estándar.
+5. Ejecute el programa con la lista que creo anteriormente y compare los resultados.
+
+	Ejemplo de ejecución pasando como parametro la lista de números:
+	
+		java -cp target/classes com.arep.App <lista_numeros.txt>
 
 ## Ejemplos de uso con maven
 Para ello nos dirigimos a la carpeta principal del proyecto, dependiendo de lo que queramos hacer.
